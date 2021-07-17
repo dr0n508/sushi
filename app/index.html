@@ -43,11 +43,9 @@
     </a>
 
     <div class="header-item cities js-dropdown-menu">
-      <div class="current">
-        <div class="current-city">
-          <img src="img/icons/svg/ok/placeholder.svg" class="map-marker" alt="map-marker">
-          <span class="title-current-city">1Олександрія <i class="fas fa-angle-down"></i></span>
-        </div>
+      <div class="current-city">
+        <img src="img/icons/svg/ok/placeholder.svg" class="map-marker" alt="map-marker">
+        <span class="title-current-city">Олександрія <i class="fas fa-angle-down"></i></span>
       </div>
       <ul class="city-wrap item-wrapper">
         <li><a href="#">Київ</a></li>
@@ -56,21 +54,6 @@
         <li><a href="#">Львів</a></li>
       </ul>
     </div>
-
-    <!--<div class="cities js-dropdown-menu">-->
-      <!--<div class="current">-->
-        <!--<div class="current-city">-->
-          <!--<img src="img/icons/svg/ok/placeholder.svg" class="map-marker" alt="map-marker">-->
-          <!--<span class="title-current-city">Олександрія <i class="fas fa-angle-down"></i></span>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<ul class="city-wrap">-->
-        <!--<li><a href="#">Київ</a></li>-->
-        <!--<li><a href="#">Харків</a></li>-->
-        <!--<li><a href="#">Донецьк</a></li>-->
-        <!--<li><a href="#">Львів</a></li>-->
-      <!--</ul>-->
-    <!--</div>-->
 
     <ul class="nav-desktop">
       <li><a href="#">Головна</a></li>
@@ -81,17 +64,45 @@
     </ul>
 
     <div class="nav-mobile">
+
       <div class="logo">
         <a href="/" class="main-logo">
           <img src="img/logo-transparent.png">
         </a>
       </div>
 
+      <div class="dropdowns-row">
+
+        <div class="header-item cities js-dropdown-menu">
+          <div class="current-city">
+            <img src="img/icons/svg/ok/placeholder.svg" class="map-marker" alt="map-marker">
+            <span class="title-current-city">Олександрія <i class="fas fa-angle-down"></i></span>
+          </div>
+          <ul class="city-wrap item-wrapper">
+            <li><a href="#">Київ</a></li>
+            <li><a href="#">Харків</a></li>
+            <li><a href="#">Донецьк</a></li>
+            <li><a href="#">Львів</a></li>
+          </ul>
+        </div>
 
 
+        <div class="header-item lang js-dropdown-menu">
+          <span>UA <i class="fas fa-angle-down"></i></span>
+          <ul class="item-wrapper lang-wrap">
+            <li><a href="#" class="lg">RU</a></li>
+            <li><a href="#" class="lg">EN</a></li>
+          </ul>
+        </div>
+
+
+      </div>
 
       <div class="nav-mobile-wrapper">
-        <ul>
+
+
+
+        <ul class="nav-mobile-items">
           <li><a href="#">Головна</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Про нас</a></li>
@@ -116,25 +127,25 @@
         <img src="img/icons/svg/ok/smartphone.svg">
         <span class="current-number">+38 (095) 643-56-56<i class="fas fa-angle-down"></i></span>
       </a>
-      <div class="item-wrapper tel-wrap">
-        <a href="tel:+38(095)6435656">+38 (095) 643-56-56</a>
-        <a href="tel:+38(097)6435656">+38 (097) 643-56-56</a>
-        <a href="tel:+38(073)6435656">+38 (073) 643-56-56</a>
-        <span class="small">з 11:00 до 23:00</span>
-      </div>
+      <ul class="item-wrapper tel-wrap">
+        <li><a href="tel:+38(095)6435656">+38 (095) 643-56-56</a></li>
+        <li><a href="tel:+38(097)6435656">+38 (097) 643-56-56</a></li>
+        <li><a href="tel:+38(073)6435656">+38 (073) 643-56-56</a></li>
+        <li><span class="small">з 11:00 до 23:00</span></li>
+      </ul>
     </div>
 
     <div class="header-item lang">
       <span>UA <i class="fas fa-angle-down"></i></span>
-      <div class="item-wrapper lang-wrap">
-        <a href="#" class="lg">RU</a>
-        <a href="#" class="lg">EN</a>
-      </div>
+      <ul class="item-wrapper lang-wrap">
+        <li><a href="#" class="lg">RU</a></li>
+        <li><a href="#" class="lg">EN</a></li>
+      </ul>
     </div>
 
     <div class="account guest-user js-dropdown-menu">
 			<a href="#" class="user-icon">
-				<img src="img/icons/svg/user-icon.svg">
+        <img src="img/icons/svg/ok/user.svg">
 			</a>
 
       <div class="account-wrap guest-user-menu">
@@ -260,13 +271,13 @@
     </div>
   </div>
 </aside>
-
-</main>
-	<footer class="footer">
+  <footer class="footer">
 	<div class="container">
 		footer
 	</div>
 </footer>
+
+</main>
 	<script src="libs/jquery/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
