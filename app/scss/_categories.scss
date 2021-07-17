@@ -1,0 +1,121 @@
+.categories-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  @media only screen and (min-width: 1024px) {
+    &:hover {
+      .categories {
+        width: 250px;
+        .categories-link a span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .categories {
+    position: fixed;
+    padding: 0 20px;
+    transition: width .3s ease;
+    z-index: 13;
+    background-color: black;
+    box-shadow: 18px 4px 18px rgba(0, 0, 0, 0.6);
+
+    @media only screen and (min-width: 1024px) {
+      padding-top: 110px;
+      top: 0;
+      width: 75px;
+      height: 100%;
+      a {
+        .categories-title {
+          position: absolute;
+          left: 64px;
+          opacity: 0;
+          transition: .1s ease;
+          color: white;
+        }
+        img.img-top {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99;
+        }
+      }
+    }
+    .categories-link {
+      margin-bottom: 16px;
+      cursor: pointer;
+      padding: 8px 0;
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        img {
+          width: 35px;
+          height: 35px;
+        }
+        img.img-top {
+          display: none;
+        }
+
+        &:hover {
+          .img-top {
+            display: inline;
+          }
+          .categories-title {
+            color: $accent;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    .categories {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      top: auto;
+      bottom: 0;
+      .categories-link {
+        width: calc(100% / 8);
+        margin-bottom: 0;
+        a {
+          flex-direction: column;
+          .categories-title {
+            opacity: 1;
+            position: relative;
+          }
+          img.img-top {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .categories {
+      .categories-link {
+        a {
+          .categories-title {
+            font-size: 12px;
+          }
+          img {
+            //width: 25px;
+            //height: 25px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .categories {
+      .categories-link {
+        a {
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
