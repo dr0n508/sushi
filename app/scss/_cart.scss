@@ -16,12 +16,13 @@
     top: 0;
     padding-top: 80px;
     border-left: solid 1px #363636;
-    background-color: black;
+    background-color: $bg;
     transition: .3s ease;
     -webkit-overflow-scrolling: touch;
     //overflow: hidden;
     .content {
       padding: 20px 40px;
+      overflow: auto;
       .empty {
         padding: 0 20px;
         .title {

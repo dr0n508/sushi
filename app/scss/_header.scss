@@ -62,6 +62,15 @@
   }
 }
 
+.main-logo {
+  width: 164px;
+  display: block;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 //header
 .main-header {
   z-index: 14;
@@ -73,14 +82,14 @@
     height: 80px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
     background-color: $bg;
-    .main-logo {
-      width: 164px;
-      display: block;
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
+    //.main-logo {
+    //  width: 164px;
+    //  display: block;
+    //  img {
+    //    width: 100%;
+    //    height: auto;
+    //  }
+    //}
     .header-item {
       position: relative;
       cursor: pointer;
@@ -216,6 +225,9 @@
           display: block;
           margin-top: 20px;
           color: $accent;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
       .account-wrap.login-user-menu {

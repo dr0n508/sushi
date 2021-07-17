@@ -1,9 +1,129 @@
 /*-- FOOTER --*/
 .footer {
-  background: #32373c;
-  color: #fff;
-  .container {
+  background: $bg;
+  box-shadow: 0 -22px 22px rgba(0, 0, 0, 0.6);
+  h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .top-footer, .bottom-footer {
+    border-top: solid 1px #363636;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: $gray-color;
+  }
+  .top-footer {
+    .footer-terms {
+      width: 25%;
+      padding-right: 10px;
+    }
+    .footer-links {
+      width: 20%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .footer-tel {
+      width: 30%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .footer-social {
+      width: 25%;
+      padding-left: 10px;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .footer-terms {
+      h3 {
+        margin-left: 15px;
+      }
+    }
+    .footer-links {
+      ul {
+        font-size: 14px;
+        li a {
+          text-decoration: underline;
+          color: $gray-color;
+          &:hover {
+            color: $accent;
+          }
+        }
+      }
+    }
+    .footer-tel {
+      ul {
+        margin-bottom: 20px;
+        li a {
+          font-size: 14px;
+          font-family: $roboto;
+          display: inline-block;
+        }
+      }
+    }
+    .footer-social {
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 5px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer {
     justify-content: space-between;
+    a {
+      text-decoration: underline;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    .top-footer {
+      .footer-terms {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .footer-links {
+        width: 33%;
+      }
+      .footer-tel {
+        width: 33%;
+      }
+      .footer-social {
+        width: 33%;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .top-footer {
+      .footer-links {
+        width: 50%;
+      }
+      .footer-tel {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+      .footer-social {
+        width: 100%;
+        padding-left: 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .top-footer {
+      .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .footer-tel {
+        width: 100%;
+      }
+    }
   }
 }
