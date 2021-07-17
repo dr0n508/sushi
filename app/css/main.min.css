@@ -485,8 +485,17 @@
           .categories-container .categories .categories-link a img.img-top {
             position: absolute; } }
   @media only screen and (max-width: 768px) {
-    .categories-container .categories .categories-link a .categories-title {
-      font-size: 12px; } }
+    .categories-container .categories {
+      overflow-x: auto; }
+      .categories-container .categories .categories-link {
+        -webkit-flex-basis: 80px;
+            -ms-flex-preferred-size: 80px;
+                flex-basis: 80px;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0; }
+        .categories-container .categories .categories-link a .categories-title {
+          font-size: 12px; } }
   @media only screen and (max-width: 420px) {
     .categories-container .categories .categories-link a img {
       width: 25px;

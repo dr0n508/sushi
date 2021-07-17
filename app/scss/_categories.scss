@@ -93,14 +93,13 @@
   }
   @media only screen and (max-width: 768px) {
     .categories {
+      overflow-x: auto;
       .categories-link {
+        flex-basis: 80px;
+        flex-shrink: 0;
         a {
           .categories-title {
             font-size: 12px;
-          }
-          img {
-            //width: 25px;
-            //height: 25px;
           }
         }
       }
