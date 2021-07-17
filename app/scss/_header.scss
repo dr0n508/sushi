@@ -66,13 +66,13 @@
 .main-header {
   z-index: 14;
   header {
-    position: fixed;
-    width: 100%;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
     height: 80px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
-    background-color: #131313;
+    background-color: $bg;
     .main-logo {
       width: 164px;
       display: block;
@@ -81,19 +81,23 @@
         height: auto;
       }
     }
-
+    .header-item {
+      position: relative;
+      cursor: pointer;
+    }
     .header-item .item-wrapper {
       position: absolute;
       opacity: 0;
       visibility: hidden;
+      padding: 40px 20px 20px 20px;
+      background-color: $bg;
+      box-shadow: 0 14px 50px rgba(0, 0, 0, 0.6);
+      transition: .25s ease-in-out;
     }
 
     .cities {
       margin-left: 20px;
-      cursor: pointer;
       .current-city {
-        display: flex;
-        align-items: center;
         .map-marker {
           display: none;
           width: 25px;
@@ -104,13 +108,6 @@
         }
       }
       .city-wrap {
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
-        padding: 40px 60px 20px 20px;
-        background-color: #131313;
-        box-shadow: 0 14px 50px rgba(0, 0, 0, 0.6);
-        transition: .25s ease-in-out;
         li a {
           font-family: $roboto;
           font-weight: 400;
@@ -146,8 +143,6 @@
 
     .tel {
       margin-left: auto;
-      position: relative;
-      cursor: pointer;
       img {
         width: 25px;
       }
@@ -166,17 +161,10 @@
         font-family: $roboto;
       }
       .tel-wrap {
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
         left: 0;
         margin-left: 30px;
-        padding: 40px 20px 20px 20px;
         min-width: 185px;
-        background-color: #131313;
-        box-shadow: 0 14px 50px rgba(0, 0, 0, 0.6);
         font-family: $roboto;
-        transition: .25s ease-in-out;
         a {
           display: block;
           padding-bottom: 10px;
@@ -191,19 +179,11 @@
     }
 
     .lang {
-      position: relative;
       margin-left: 20px;
       font-family: $roboto;
       font-size: 14px;
-      cursor: pointer;
       .lang-wrap {
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
         left: -20px;
-        padding: 40px 20px 20px 20px;
-        background-color: #131313;
-        box-shadow: 0 14px 50px rgba(0, 0, 0, 0.6);
         a {
           margin-bottom: 10px;
           display: inline-block;
@@ -233,7 +213,7 @@
         opacity: 0;
         visibility: hidden;
         padding: 30px;
-        background-color: #131313;
+        background-color: $bg;
         box-shadow: 0 14px 50px rgba(0, 0, 0, 0.6);
         transition: .25s ease-in-out;
         .social-login {
