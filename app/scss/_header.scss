@@ -82,6 +82,12 @@
       }
     }
 
+    .header-item .item-wrapper {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+    }
+
     .cities {
       margin-left: 20px;
       cursor: pointer;
@@ -283,45 +289,19 @@
     //media
 
     @media only screen and (min-width: 1025px) {
-      .cities {
-        &:hover {
-          .city-wrap {
-            opacity: 1;
-            visibility: visible;
-          }
+      .header-item:hover {
+        .item-wrapper {
+          opacity: 1;
+          visibility: visible;
         }
       }
-      .tel {
-        &:hover {
-          .tel-wrap {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
+      .account.login-user:hover .account-wrap.login-user-menu {
+        opacity: 1;
+        visibility: visible;
       }
-      .lang {
-        &:hover {
-          .lang-wrap {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-      }
-      .account.login-user {
-        &:hover {
-          .account-wrap.login-user-menu {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-      }
-      .account.guest-user {
-        &:hover {
-          .account-wrap.guest-user-menu {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
+      .account.guest-user:hover .account-wrap.guest-user-menu {
+        opacity: 1;
+        visibility: visible;
       }
     }
 
@@ -394,18 +374,9 @@
           left: auto;
         }
       }
-      .tel.active {
-        .tel-wrap {
-          opacity: 1;
-          visibility: visible;
-
-        }
-      }
-      .cities.active {
-        .city-wrap {
-          opacity: 1;
-          visibility: visible;
-        }
+      .header-item.active .item-wrapper {
+        opacity: 1;
+        visibility: visible;
       }
       .account.login-user.active {
         .account-wrap.login-user-menu {

@@ -85,6 +85,10 @@
       .main-header header .main-logo img {
         width: 100%;
         height: auto; }
+    .main-header header .header-item .item-wrapper {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden; }
     .main-header header .cities {
       margin-left: 20px;
       cursor: pointer; }
@@ -267,13 +271,7 @@
         .main-header header .basket {
           display: block; } }
     @media only screen and (min-width: 1025px) {
-      .main-header header .cities:hover .city-wrap {
-        opacity: 1;
-        visibility: visible; }
-      .main-header header .tel:hover .tel-wrap {
-        opacity: 1;
-        visibility: visible; }
-      .main-header header .lang:hover .lang-wrap {
+      .main-header header .header-item:hover .item-wrapper {
         opacity: 1;
         visibility: visible; }
       .main-header header .account.login-user:hover .account-wrap.login-user-menu {
@@ -338,10 +336,7 @@
           .main-header header .tel .tel-wrap {
             right: 0;
             left: auto; }
-        .main-header header .tel.active .tel-wrap {
-          opacity: 1;
-          visibility: visible; }
-        .main-header header .cities.active .city-wrap {
+        .main-header header .header-item.active .item-wrapper {
           opacity: 1;
           visibility: visible; }
         .main-header header .account.login-user.active .account-wrap.login-user-menu {
