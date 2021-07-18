@@ -391,7 +391,8 @@
     .categories-container:hover .categories {
       width: 250px; }
       .categories-container:hover .categories .categories-link a span {
-        opacity: 1; } }
+        opacity: 1;
+        visibility: visible; } }
   .categories-container .categories {
     position: fixed;
     padding: 0 20px;
@@ -412,6 +413,7 @@
           position: absolute;
           left: 64px;
           opacity: 0;
+          visibility: hidden;
           -webkit-transition: .1s ease;
           -o-transition: .1s ease;
           transition: .1s ease;
@@ -523,10 +525,11 @@
     transition: .3s ease;
     -webkit-overflow-scrolling: touch; }
     .cart-container .cart .content {
-      padding: 20px 40px;
+      padding: 20px 30px;
       overflow: auto; }
       .cart-container .cart .content .empty {
-        padding: 0 20px; }
+        padding: 0 30px;
+        margin-bottom: 20px; }
         .cart-container .cart .content .empty .title {
           display: -webkit-box;
           display: -webkit-flex;
@@ -576,6 +579,287 @@
     .cart-container {
       opacity: 0;
       visibility: hidden; } }
+
+.order-aside h3 {
+  margin-bottom: 20px; }
+
+.order-aside .order-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid 1px #363636;
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 20px; }
+  .order-aside .order-item .btn-close {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: solid 1px #999999;
+    background: none;
+    outline: none;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+    .order-aside .order-item .btn-close:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 1px;
+      background-color: #999999;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .order-aside .order-item .btn-close:after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 1px;
+      background-color: #999999;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .order-aside .order-item .btn-close:hover {
+      border-color: white; }
+      .order-aside .order-item .btn-close:hover:after, .order-aside .order-item .btn-close:hover:before {
+        background-color: white; }
+  .order-aside .order-item .info .title-item {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #E4E4E4;
+    margin-bottom: 10px; }
+  .order-aside .order-item .info .wrapper-quantity {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .order-aside .order-item .info .price {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px; }
+    .order-aside .order-item .info .price span {
+      font-size: 16px; }
+  .order-aside .order-item .image {
+    min-width: auto;
+    max-width: 120px; }
+
+.order-aside .row-inputs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.custom-input-number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .custom-input-number span {
+    cursor: pointer; }
+  .custom-input-number .minus, .custom-input-number .plus {
+    width: 25px;
+    height: 25px;
+    background: #FE4302;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .custom-input-number .minus:hover, .custom-input-number .plus:hover {
+      background-color: #e73c02; }
+  .custom-input-number input {
+    padding: 10px 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+    height: 34px;
+    width: 30px; }
+
+.custom-input {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  background: none;
+  border: none;
+  border: solid 1px #333333;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  outline: none;
+  color: #999999; }
+
+.custom-select {
+  position: relative;
+  margin-bottom: 20px; }
+  .custom-select:after {
+    content: "\f107";
+    position: absolute;
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free";
+    display: block;
+    right: 20px;
+    top: 50%;
+    margin-top: -8px; }
+  .custom-select select {
+    padding: 10px 20px;
+    width: 100%;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    background: none;
+    border: none;
+    border: solid 1px #333333;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    outline: none;
+    color: #999999;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.4;
+  outline: none;
+  color: #999999; }
+
+.custom-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: solid 1px #333333;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 50% 50%;
+          background-size: 50% 50%; }
+
+.custom-checkbox:checked + label::before {
+  border-color: #FE4302;
+  background-color: #FE4302;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
+
+.custom-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  color: #999999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Hide the browser's default radio button */
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #131313;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: solid 2px #333333; }
+
+/* On mouse-over, add a grey background color */
+/* When the radio button is checked, add a blue background */
+.custom-radio input:checked ~ .checkmark {
+  background-color: #131313; }
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #FE4302; }
+
+.swiper-pagination-bullet {
+  height: 16px;
+  width: 16px; }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #484848; }
 
 .footer {
   background: #131313;
@@ -776,12 +1060,14 @@ button, .btn {
   margin-top: 80px;
   margin-bottom: 40px;
   padding-top: 20px;
-  padding-right: calc(30px + 350px);
-  padding-left: calc(30px + 75px); }
+  padding-right: calc(0px + 350px);
+  padding-left: calc(0px + 75px); }
   @media only screen and (max-width: 1024px) {
     .main {
       padding: 20px;
       padding-bottom: 80px; } }
+  .main .inner-content {
+    padding: 30px; }
 
 .small {
   font-size: 12px; }
@@ -791,6 +1077,10 @@ button, .btn {
 
 .accent-text {
   color: #FE4302; }
+
+.swiper-container {
+  width: 100%;
+  height: 300px; }
 
 /* Always at the end*/
 

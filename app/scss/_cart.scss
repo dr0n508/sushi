@@ -21,10 +21,11 @@
     transition: .3s ease;
     -webkit-overflow-scrolling: touch;
     .content {
-      padding: 20px 40px;
+      padding: 20px 30px;
       overflow: auto;
       .empty {
-        padding: 0 20px;
+        padding: 0 30px;
+        margin-bottom: 20px;
         .title {
           display: flex;
           align-items: center;
@@ -71,6 +72,83 @@
   @media only screen and (max-width: 1024px) {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+.order-aside {
+  h3 {
+    margin-bottom: 20px;
+  }
+  .order-item {
+    display: flex;
+    border-bottom: solid 1px #363636;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    .btn-close {
+      right: 0;
+      top: 0;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border: solid 1px #999999;
+      background: none;
+      outline: none;
+      border-radius: 50%;
+      flex-shrink: 0;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 1px;
+        background-color: #999999;
+        transform: rotate(45deg);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 1px;
+        background-color: #999999;
+        transform: rotate(-45deg);
+      }
+      &:hover {
+        border-color: white;
+        &:after, &:before {
+          background-color: white;
+        }
+      }
+    }
+    .info {
+
+      .title-item {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #E4E4E4;
+        margin-bottom: 10px;
+
+      }
+      .wrapper-quantity {
+        display: flex;
+        align-items: center;
+      }
+      .price {
+        font-size: 18px;
+        font-family: $roboto;
+        margin-left: 10px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .image {
+      min-width: auto;
+      max-width: 120px;
+    }
+  }
+  .row-inputs {
+    display: flex;
   }
 }
 

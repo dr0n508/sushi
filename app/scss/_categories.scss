@@ -8,6 +8,7 @@
         width: 250px;
         .categories-link a span {
           opacity: 1;
+          visibility: visible;
         }
       }
     }
@@ -30,6 +31,7 @@
           position: absolute;
           left: 64px;
           opacity: 0;
+          visibility: hidden;
           transition: .1s ease;
           color: white;
         }
