@@ -703,18 +703,6 @@ body {
           flex-direction: column;
   background-color: #131313; }
 
-.main {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto; }
-
-.footer {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto; }
-
 img, svg {
   max-height: 100%;
   max-width: 100%;
@@ -800,6 +788,9 @@ button, .btn {
 
 .roboto {
   font-family: "Roboto", sans-serif; }
+
+.accent-text {
+  color: #FE4302; }
 
 /* Always at the end*/
 

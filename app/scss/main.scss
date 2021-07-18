@@ -53,11 +53,11 @@ body {
 }
 
 .main {
-	flex: 1 0 auto;
+	//flex: 1 0 auto;
 	//padding-top: 90px;
 }
 .footer {
-	flex: 0 0 auto;
+	//flex: 0 0 auto;
 }
 img, svg {
 	max-height: 100%;
@@ -170,6 +170,10 @@ button, .btn {
 
 .roboto {
    font-family: $roboto;
+}
+
+.accent-text {
+  color: $accent;
 }
 
 @import "media"; /* Always at the end*/
