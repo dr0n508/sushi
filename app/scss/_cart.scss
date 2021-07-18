@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     padding-bottom: 150px;
-
     z-index: 10;
     width: 350px;
     height: 100%;
@@ -34,7 +33,6 @@
             margin-left: 20px;
           }
         }
-
         .text-info{
           font-size: 14px;
           color: $gray-color;
@@ -46,7 +44,6 @@
       bottom: 0;
       right: 0;
       width: 350px;
-
       .min-sum {
         font-size: 14px;
         color: $gray-color;
@@ -120,13 +117,11 @@
       }
     }
     .info {
-
       .title-item {
         font-size: 14px;
         line-height: 1.4;
         color: #E4E4E4;
         margin-bottom: 10px;
-
       }
       .wrapper-quantity {
         display: flex;
@@ -151,4 +146,3 @@
     display: flex;
   }
 }
-

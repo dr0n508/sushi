@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url(../fonts/segoePrint/stylesheet.css);
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap");
 .burger {
   display: none;
   position: fixed;
@@ -343,8 +339,6 @@
       .main-header header .main-logo {
         width: 120px; } }
     @media only screen and (max-width: 350px) {
-      .main-header header .main-logo {
-        width: 120px; }
       .main-header header .nav-mobile .logo {
         display: none; } }
 
@@ -705,16 +699,16 @@
   margin-bottom: 20px;
   padding: 10px 20px;
   width: 100%;
-  -webkit-border-radius: 50px;
-          border-radius: 50px;
   background: none;
-  border: none;
-  border: solid 1px #333333;
+  color: #999999;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   line-height: 1.4;
-  outline: none;
-  color: #999999; }
+  border: none;
+  border: solid 1px #333333;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  outline: none; }
 
 .custom-select {
   position: relative;
@@ -731,19 +725,19 @@
   .custom-select select {
     padding: 10px 20px;
     width: 100%;
-    -webkit-border-radius: 50px;
-            border-radius: 50px;
     background: none;
     border: none;
     border: solid 1px #333333;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     line-height: 1.4;
     outline: none;
     color: #999999;
     -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; }
+       -moz-appearance: none;
+            appearance: none; }
 
 .custom-checkbox {
   position: absolute;
@@ -770,7 +764,7 @@
   outline: none;
   color: #999999; }
 
-.custom-checkbox + label::before {
+.custom-checkbox + label:before {
   content: '';
   display: inline-block;
   width: 22px;
@@ -791,17 +785,16 @@
   -webkit-background-size: 50% 50%;
           background-size: 50% 50%; }
 
-.custom-checkbox:checked + label::before {
+.custom-checkbox:checked + label:before {
   border-color: #FE4302;
   background-color: #FE4302;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
 
 .custom-radio {
-  display: block;
   position: relative;
-  padding-left: 35px;
+  display: block;
   margin-bottom: 12px;
-  cursor: pointer;
+  padding-left: 35px;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   line-height: 25px;
@@ -809,50 +802,38 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
-
-/* Hide the browser's default radio button */
-.custom-radio input {
-  position: absolute;
-  opacity: 0;
+  user-select: none;
   cursor: pointer; }
+  .custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+  .custom-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    background-color: #131313;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: solid 2px #333333; }
+    .custom-radio .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 4px;
+      left: 4px;
+      width: 14px;
+      height: 14px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: #FE4302; }
 
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 26px;
-  width: 26px;
-  background-color: #131313;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  border: solid 2px #333333; }
-
-/* On mouse-over, add a grey background color */
-/* When the radio button is checked, add a blue background */
 .custom-radio input:checked ~ .checkmark {
   background-color: #131313; }
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-/* Show the indicator (dot/circle) when checked */
-.custom-radio input:checked ~ .checkmark:after {
-  display: block; }
-
-/* Style the indicator (dot/circle) */
-.custom-radio .checkmark:after {
-  top: 4px;
-  left: 4px;
-  width: 14px;
-  height: 14px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background: #FE4302; }
+  .custom-radio input:checked ~ .checkmark:after {
+    display: block; }
 
 .swiper-pagination-bullet {
   height: 16px;
@@ -1018,7 +999,7 @@ a {
 h1, h2, h3, h4 {
   font-weight: inherit; }
 
-button, .btn {
+button {
   color: #fff;
   border: 1px solid currentColor;
   cursor: pointer;
@@ -1037,10 +1018,10 @@ button, .btn {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   font-weight: bold; }
-  button:hover, .btn:hover {
+  button:hover {
     color: #ffffff; }
 
-.animate, a, button, .btn {
+.animate, a, button {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
@@ -1080,7 +1061,7 @@ button, .btn {
 
 .swiper-container {
   width: 100%;
-  height: 300px; }
+  height: 450px; }
 
 /* Always at the end*/
 
