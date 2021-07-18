@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-// Mobile menu
+    // Mobile menu
 	$('.burger').click(function(){
 		$(this).toggleClass('active');
 		$('body').toggleClass('no_scroll');
@@ -19,15 +19,12 @@ $(document).ready(function() {
 		e.stopPropagation();
 	});
 
-
     $( ".js-categories" ).hover(function() {
 
         if ($(window).width() >= 1024) {
             $('body').toggleClass('no_scroll');
         }
-
     });
-
 
     $('.js-dropdown-menu').click(function(e){
         e.preventDefault();
@@ -44,11 +41,7 @@ $(document).ready(function() {
 
     });
 
-
-
-
-//custom imput number
-
+    //custom imput number
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
@@ -65,30 +58,57 @@ $(document).ready(function() {
     });
 
 
+    //Swiper sliders
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-    },
+        // Navigation arrows
+        navigation: {
+            nextEl: false,
+            prevEl: false,
+        },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: false,
-        prevEl: false,
-    },
+        // And if we need scrollbar
+        scrollbar: {
+            // el: '.swiper-scrollbar',
+        },
+    });
 
-    // And if we need scrollbar
-    scrollbar: {
-        // el: '.swiper-scrollbar',
-    },
-});
+    const swiper_rolls = new Swiper('.swiper-rolls', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 10,
+
+        // If we need pagination
+        pagination: {
+            // el: '.swiper-pagination',
+            // type: 'bullets',
+            // clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.next_product',
+            prevEl: '.prev_product',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            // el: '.swiper-scrollbar',
+        },
+    });
+
 
 
 });
