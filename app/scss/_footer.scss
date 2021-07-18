@@ -1,5 +1,5 @@
-/*-- FOOTER --*/
 .footer {
+  //margin: 0 -30px;
   background: $bg;
   box-shadow: 0 -22px 22px rgba(0, 0, 0, 0.6);
   h3 {
@@ -9,7 +9,7 @@
   }
   .top-footer, .bottom-footer {
     border-top: solid 1px #363636;
-    padding: 20px;
+    padding: 30px 20px;
     display: flex;
     flex-wrap: wrap;
     font-size: 14px;
@@ -78,6 +78,7 @@
     }
   }
   .bottom-footer {
+    padding: 29px 20px;
     justify-content: space-between;
     a {
       text-decoration: underline;

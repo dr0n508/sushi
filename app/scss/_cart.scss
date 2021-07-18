@@ -15,11 +15,11 @@
     height: 100%;
     top: 0;
     padding-top: 80px;
+    box-shadow: -18px 4px 18px rgba(0, 0, 0, 0.6);
     border-left: solid 1px #363636;
     background-color: $bg;
     transition: .3s ease;
     -webkit-overflow-scrolling: touch;
-    //overflow: hidden;
     .content {
       padding: 20px 40px;
       overflow: auto;
