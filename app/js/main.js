@@ -60,53 +60,47 @@ $(document).ready(function() {
 
     //Swiper sliders
     const swiper = new Swiper('.swiper-container', {
-        // Optional parameters
         direction: 'horizontal',
         loop: true,
-
-        // If we need pagination
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
             clickable: true
         },
-
-        // Navigation arrows
         navigation: {
             nextEl: false,
             prevEl: false,
         },
-
-        // And if we need scrollbar
-        scrollbar: {
-            // el: '.swiper-scrollbar',
-        },
     });
 
     const swiper_rolls = new Swiper('.swiper-rolls', {
-        // Optional parameters
         direction: 'horizontal',
         loop: true,
         slidesPerView: 4,
-        spaceBetween: 10,
-
-        // If we need pagination
-        pagination: {
-            // el: '.swiper-pagination',
-            // type: 'bullets',
-            // clickable: true
+        spaceBetween: 20,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+            1400: {
+                slidesPerView: 4,
+            }
         },
 
-        // Navigation arrows
         navigation: {
             nextEl: '.next_product',
             prevEl: '.prev_product',
-        },
+        }
 
-        // And if we need scrollbar
-        scrollbar: {
-            // el: '.swiper-scrollbar',
-        },
     });
 
 

@@ -20,6 +20,7 @@
 
 .btn-transparent.accent {
   color: $accent;
+  background-color: transparent;
   border: solid 1px $accent;
   &:hover {
     background-color: $accent;
