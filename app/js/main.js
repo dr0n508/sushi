@@ -78,19 +78,48 @@ $(document).ready(function() {
         },
     });
 
+    const swiper_consist = new Swiper('.swiper-consist', {
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: 'true',
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    });
+
     const swiper_rolls = new Swiper('.swiper-rolls', {
         direction: 'horizontal',
         loop: false,
         spaceBetween: 20,
-
         slidesPerView: 'auto',
         freeMode: 'true',
 
         slidesOffsetAfter: 120,
 
         navigation: {
-            nextEl: '.next_product',
-            prevEl: '.prev_product',
+            nextEl: '.prod-btn-next',
+            prevEl: '.prod-btn-prev',
+        }
+
+    });
+
+    const swiper_recomendations = new Swiper('.swiper-recomendations', {
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        freeMode: 'true',
+
+        slidesOffsetAfter: 120,
+
+        navigation: {
+            nextEl: '.recom-btn-next',
+            prevEl: '.recom-btn-prev',
         }
 
     });

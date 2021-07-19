@@ -15,6 +15,12 @@
   overflow: auto;
   margin-bottom: 20px;
   margin-right: -30px;
+
+}
+
+.swiper-consist {
+  position: relative;
+  overflow: hidden;
 }
 
 .rolls-buttons {
@@ -38,6 +44,12 @@
       i {
         color: $accent;
       }
+    }
+  }
+  .prev_product.swiper-button-disabled, .next_product.swiper-button-disabled {
+    border-color: #454545;
+    i {
+      color: #454545;
     }
   }
 }
