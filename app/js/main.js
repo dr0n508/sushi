@@ -121,11 +121,14 @@ $(document).ready(function() {
     // })
 
     // init Isotope
-    var $grid = $('.grid-filter').isotope({
-        itemSelector: '.product-item',
-        layoutMode: 'fitRows'
-    });
-    // filter functions
+    setTimeout(() => {  {
+
+        var $grid = $('.grid-filter').isotope({
+            itemSelector: '.product-item',
+            layoutMode: 'fitRows'
+        });
+
+        // filter functions
         var filterFns = {
             // show if number is greater than 50
             numberGreaterThan50: function() {
@@ -138,14 +141,14 @@ $(document).ready(function() {
                 return name.match( /ium$/ );
             }
         };
-    // bind filter button click
+        // bind filter button click
         $('.filters-button-group').on( 'click', 'button', function() {
             var filterValue = $( this ).attr('data-filter');
             // use filterFn if matches value
             filterValue = filterFns[ filterValue ] || filterValue;
             $grid.isotope({ filter: filterValue });
         });
-    // change is-checked class on buttons
+        // change is-checked class on buttons
         $('.button-group').each( function( i, buttonGroup ) {
             var $buttonGroup = $( buttonGroup );
             $buttonGroup.on( 'click', 'button', function() {
@@ -154,6 +157,7 @@ $(document).ready(function() {
             });
         });
 
+    } }, 100);
 
 });
 
