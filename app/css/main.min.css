@@ -890,6 +890,165 @@
       .rolls-buttons .next_product:hover i {
         color: #FE4302; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: sans-serif; }
+
+/* ---- button ---- */
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: #EEE;
+  border: none;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer; }
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  color: #222; }
+
+.button:active,
+.button.is-checked {
+  background-color: #28F; }
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8); }
+
+.button:active {
+  -webkit-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8); }
+
+/* ---- button-group ---- */
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.button-group .button {
+  float: left;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px; }
+
+.button-group .button:first-child {
+  -webkit-border-radius: 0.5em 0 0 0.5em;
+          border-radius: 0.5em 0 0 0.5em; }
+
+.button-group .button:last-child {
+  -webkit-border-radius: 0 0.5em 0.5em 0;
+          border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- isotope ---- */
+.grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- .element-item ---- */
+.element-item {
+  position: relative;
+  width: calc(25% - 10px);
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #888;
+  color: #262524; }
+
+.element-item > * {
+  margin: 0;
+  padding: 0; }
+
+.element-item .name {
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal; }
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white; }
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px; }
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px; }
+
+.element-item.alkali {
+  background: #F00;
+  background: red; }
+
+.element-item.alkaline-earth {
+  background: #F80;
+  background: #ff9900; }
+
+.element-item.lanthanoid {
+  background: #FF0;
+  background: #ccff00; }
+
+.element-item.actinoid {
+  background: #0F0;
+  background: #33ff00; }
+
+.element-item.transition {
+  background: #0F8;
+  background: #00ff66; }
+
+.element-item.post-transition {
+  background: #0FF;
+  background: cyan; }
+
+.element-item.metalloid {
+  background: #08F;
+  background: #0066ff; }
+
+.element-item.diatomic {
+  background: #00F;
+  background: #3300ff; }
+
+.element-item.halogen {
+  background: #F0F;
+  background: #cc00ff; }
+
+.element-item.noble-gas {
+  background: #F08;
+  background: #ff0099; }
+
 .footer {
   background: #131313;
   -webkit-box-shadow: 0 -22px 22px rgba(0, 0, 0, 0.6);
@@ -1173,6 +1332,19 @@ button {
           font-family: "Segoe Print", sans-serif;
           font-size: 14px;
           margin-left: 5px; }
+
+.product-grid.product-list {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .product-grid.product-list .product-item {
+    width: 25%; }
+
+.breadcrumbs {
+  font-size: 13px;
+  margin-bottom: 20px; }
+  .breadcrumbs .direction-home {
+    color: #FE4302; }
 
 /* Always at the end*/
 

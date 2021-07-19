@@ -6,6 +6,7 @@
 @import "cart";
 @import "inputs";
 @import "swiper-slider-custom";
+@import "tabs";
 @import "footer";
 
 ::-moz-selection {
@@ -144,6 +145,8 @@ button {
   }
 }
 
+
+
 .product-list {
   display: flex;
   .product-item {
@@ -185,6 +188,21 @@ button {
         }
       }
     }
+  }
+}
+
+.product-grid.product-list {
+  flex-wrap: wrap;
+  .product-item {
+    width: 25%;
+  }
+}
+
+.breadcrumbs {
+  font-size: 13px;
+  margin-bottom: 20px;
+  .direction-home {
+    color: $accent;
   }
 }
 
