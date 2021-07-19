@@ -144,5 +144,14 @@
   }
   .row-inputs {
     display: flex;
+    .custom-input {
+      width: 50%;
+      &:first-child {
+        margin-right: 5px;
+      }
+      &:nth-child(2) {
+        margin-left: 5px;
+      }
+    }
   }
 }

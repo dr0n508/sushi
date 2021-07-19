@@ -151,7 +151,8 @@ button {
 .product-list {
   display: flex;
   .product-item {
-    padding: 20px;
+    width: 220px;
+    padding: 15px;
     margin-bottom: 20px;
     background-color: black;
     border: solid 1px #383838;
@@ -164,7 +165,7 @@ button {
     .cat-slide-content {
 
       .cat-slide-name a {
-         display: inline-block;
+       display: inline-block;
         margin-bottom: 15px;
       }
       .cat-slide-desc {
@@ -184,7 +185,7 @@ button {
         span {
           font-family: $default;
           font-size: 14px;
-          margin-left: 10px;
+          margin-left: 5px;
         }
 
       }

@@ -57,6 +57,11 @@ $(document).ready(function() {
         return false;
     });
 
+    //remove item from cart
+    $('.btn-close').click(function () {
+        $(this).closest('.order-item').remove();
+    });
+
 
     //Swiper sliders
     const swiper = new Swiper('.swiper-container', {
@@ -75,26 +80,13 @@ $(document).ready(function() {
 
     const swiper_rolls = new Swiper('.swiper-rolls', {
         direction: 'horizontal',
-        loop: true,
-        slidesPerView: 4,
+        loop: false,
         spaceBetween: 20,
-        breakpoints: {
-            320: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 3,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-            1400: {
-                slidesPerView: 4,
-            }
-        },
+
+        slidesPerView: 'auto',
+        freeMode: 'true',
+
+        slidesOffsetAfter: 120,
 
         navigation: {
             nextEl: '.next_product',
