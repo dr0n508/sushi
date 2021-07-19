@@ -113,9 +113,9 @@
         transform: rotate(-45deg);
       }
       &:hover {
-        border-color: white;
+        border-color: $accent;
         &:after, &:before {
-          background-color: white;
+          background-color: $accent;
         }
       }
     }

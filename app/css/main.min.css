@@ -357,8 +357,8 @@
   color: white;
   border: solid 1px white; }
   .btn-transparent.white:hover, .white.btn-accent:hover {
-    background-color: white;
-    color: black; }
+    color: #FE4302;
+    border-color: #FE4302; }
 
 .btn-transparent.accent, .accent.btn-accent {
   color: #FE4302;
@@ -374,9 +374,12 @@
   font-size: 14px;
   text-transform: uppercase;
   line-height: 40px;
-  height: 42px; }
+  height: 42px;
+  border: solid 1px transparent; }
   .btn-accent:hover {
-    background-color: #e73c02; }
+    background: none;
+    color: #FE4302;
+    border: solid 1px #FE4302; }
 
 .categories-container {
   position: absolute;
@@ -622,9 +625,9 @@
           -ms-transform: rotate(-45deg);
               transform: rotate(-45deg); }
     .order-aside .order-item .btn-close:hover {
-      border-color: white; }
+      border-color: #FE4302; }
       .order-aside .order-item .btn-close:hover:after, .order-aside .order-item .btn-close:hover:before {
-        background-color: white; }
+        background-color: #FE4302; }
   .order-aside .order-item .info .title-item {
     font-size: 14px;
     line-height: 1.4;
@@ -882,10 +885,10 @@
       color: #999999; }
     .rolls-buttons .prev_product:hover,
     .rolls-buttons .next_product:hover {
-      border-color: white; }
+      border-color: #FE4302; }
       .rolls-buttons .prev_product:hover i,
       .rolls-buttons .next_product:hover i {
-        color: white; }
+        color: #FE4302; }
 
 .footer {
   background: #131313;

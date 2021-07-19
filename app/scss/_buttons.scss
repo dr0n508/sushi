@@ -13,8 +13,9 @@
   color: white;
   border: solid 1px white;
   &:hover {
-    background-color: white;
-    color: black;
+    //background-color: white;
+    color: $accent;
+    border-color: $accent;
   }
 }
 
@@ -36,7 +37,10 @@
   text-transform: uppercase;
   line-height: 40px;
   height: 42px;
+  border: solid 1px transparent;
   &:hover {
-    background-color: #e73c02;
+    background: none;
+    color: $accent;
+    border: solid 1px $accent;
   }
 }

@@ -34,9 +34,9 @@
       color: #999999;
     }
     &:hover {
-      border-color: white;
+      border-color: $accent;
       i {
-        color: white;
+        color: $accent;
       }
     }
   }
