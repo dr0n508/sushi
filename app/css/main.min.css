@@ -955,99 +955,19 @@ body {
           border-radius: 0 0.5em 0.5em 0; }
 
 /* ---- isotope ---- */
-.grid {
+.grid-filter {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both; }
-
-/* ---- .element-item ---- */
-.element-item {
-  position: relative;
-  width: calc(25% - 10px);
-  height: 100px;
-  margin: 5px;
-  padding: 10px;
-  background: #888;
-  color: #262524; }
-
-.element-item > * {
-  margin: 0;
-  padding: 0; }
-
-.element-item .name {
-  position: absolute;
-  left: 10px;
-  top: 60px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-weight: normal; }
-
-.element-item .symbol {
-  position: absolute;
-  left: 10px;
-  top: 0px;
-  font-size: 42px;
-  font-weight: bold;
-  color: white; }
-
-.element-item .number {
-  position: absolute;
-  right: 8px;
-  top: 5px; }
-
-.element-item .weight {
-  position: absolute;
-  left: 10px;
-  top: 76px;
-  font-size: 12px; }
-
-.element-item.alkali {
-  background: #F00;
-  background: red; }
-
-.element-item.alkaline-earth {
-  background: #F80;
-  background: #ff9900; }
-
-.element-item.lanthanoid {
-  background: #FF0;
-  background: #ccff00; }
-
-.element-item.actinoid {
-  background: #0F0;
-  background: #33ff00; }
-
-.element-item.transition {
-  background: #0F8;
-  background: #00ff66; }
-
-.element-item.post-transition {
-  background: #0FF;
-  background: cyan; }
-
-.element-item.metalloid {
-  background: #08F;
-  background: #0066ff; }
-
-.element-item.diatomic {
-  background: #00F;
-  background: #3300ff; }
-
-.element-item.halogen {
-  background: #F0F;
-  background: #cc00ff; }
-
-.element-item.noble-gas {
-  background: #F08;
-  background: #ff0099; }
+  .grid-filter:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .grid-filter .product-item {
+    position: relative;
+    width: calc(25% - 20px);
+    margin: 10px; }
 
 .footer {
   background: #131313;
@@ -1290,48 +1210,50 @@ button {
   display: -ms-flexbox;
   display: flex; }
   .product-list .product-item {
-    width: 220px;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: black;
-    border: solid 1px #383838;
-    -webkit-border-radius: 20px;
-            border-radius: 20px;
-    -webkit-box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
-            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6); }
-    .product-list .product-item .cat-image {
-      text-align: center;
-      margin-bottom: 10px; }
-    .product-list .product-item .cat-slide-content .cat-slide-name a {
-      display: inline-block;
-      margin-bottom: 15px; }
-    .product-list .product-item .cat-slide-content .cat-slide-desc {
-      color: #999999;
-      font-size: 13px;
-      margin-bottom: 15px; }
-    .product-list .product-item .cat-slide-buy {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-      .product-list .product-item .cat-slide-buy .price {
-        font-family: "Roboto", sans-serif;
-        font-size: 18px; }
-        .product-list .product-item .cat-slide-buy .price span {
-          font-family: "Segoe Print", sans-serif;
-          font-size: 14px;
-          margin-left: 5px; }
+    width: 220px; }
+
+.product-item {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: black;
+  border: solid 1px #383838;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6); }
+  .product-item .cat-image {
+    text-align: center;
+    margin-bottom: 10px; }
+  .product-item .cat-slide-content .cat-slide-name a {
+    display: inline-block;
+    margin-bottom: 15px; }
+  .product-item .cat-slide-content .cat-slide-desc {
+    color: #999999;
+    font-size: 13px;
+    margin-bottom: 15px; }
+  .product-item .cat-slide-buy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .product-item .cat-slide-buy .price {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px; }
+      .product-item .cat-slide-buy .price span {
+        font-family: "Segoe Print", sans-serif;
+        font-size: 14px;
+        margin-left: 5px; }
 
 .product-grid.product-list {
   -webkit-flex-wrap: wrap;

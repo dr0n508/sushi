@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Home</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="description" content="Home page">
+
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+
+	<!-- Template Basic Images End -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Custom Browsers Color -->
+	<meta name="theme-color" content="#3a66c7">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="main-header">
+
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header>
+
+    <a href="#" class="main-logo">
+      <img src="img/logo-transparent.png">
+    </a>
+
+    <div class="header-item cities js-dropdown-menu">
+      <div class="current-city">
+        <img src="img/icons/svg/ok/placeholder.svg" class="map-marker" alt="map-marker">
+        <span class="title-current-city">Олександрія <i class="fas fa-angle-down"></i></span>
+      </div>
+      <ul class="city-wrap item-wrapper">
+        <li><a href="#">Київ</a></li>
+        <li><a href="#">Харків</a></li>
+        <li><a href="#">Донецьк</a></li>
+        <li><a href="#">Львів</a></li>
+      </ul>
+    </div>
+
+    <ul class="nav-desktop">
+      <li><a href="#">Головна</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Про нас</a></li>
+      <li><a href="#">Новини</a></li>
+      <li><a href="#">Контакти</a></li>
+    </ul>
+
+    <div class="nav-mobile">
+
+      <div class="logo">
+        <a href="/" class="main-logo">
+          <img src="img/logo-transparent.png">
+        </a>
+      </div>
+
+      <div class="dropdowns-row">
+
+        <div class="header-item cities js-dropdown-menu">
+          <div class="current-city">
+            <img src="img/icons/svg/ok/placeholder.svg" class="map-marker" alt="map-marker">
+            <span class="title-current-city">Олександрія <i class="fas fa-angle-down"></i></span>
+          </div>
+          <ul class="city-wrap item-wrapper">
+            <li><a href="#">Київ</a></li>
+            <li><a href="#">Харків</a></li>
+            <li><a href="#">Донецьк</a></li>
+            <li><a href="#">Львів</a></li>
+          </ul>
+        </div>
+
+        <div class="header-item lang js-dropdown-menu">
+          <span>UA <i class="fas fa-angle-down"></i></span>
+          <ul class="item-wrapper lang-wrap">
+            <li><a href="#" class="lg">RU</a></li>
+            <li><a href="#" class="lg">EN</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav-mobile-wrapper">
+
+        <ul class="nav-mobile-items">
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Новини</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+
+        <div class="phone-block">
+          <h3>Оформити замовлення</h3>
+          <p><a href="tel:+38(095)6435656">+38 (095) 643-56-56</a></p>
+          <p><a href="tel:+38(097)6435656">+38 (097) 643-56-56</a></p>
+          <p><a href="tel:+38(073)6435656">+38 (073) 643-56-56</a></p>
+        </div>
+
+        <h3>Графік роботи</h3>
+        <p> з 10:00 до 20:00</p>
+      </div>
+    </div>
+
+    <div class="header-item tel js-dropdown-menu">
+      <a href="tel:+38(095)6435656" class="tel-current">
+        <img src="img/icons/svg/ok/smartphone.svg">
+        <span class="current-number">+38 (095) 643-56-56<i class="fas fa-angle-down"></i></span>
+      </a>
+      <ul class="item-wrapper tel-wrap">
+        <li><a href="tel:+38(095)6435656">+38 (095) 643-56-56</a></li>
+        <li><a href="tel:+38(097)6435656">+38 (097) 643-56-56</a></li>
+        <li><a href="tel:+38(073)6435656">+38 (073) 643-56-56</a></li>
+        <li><span class="small">з 11:00 до 23:00</span></li>
+      </ul>
+    </div>
+
+    <div class="header-item lang">
+      <span>UA <i class="fas fa-angle-down"></i></span>
+      <ul class="item-wrapper lang-wrap">
+        <li><a href="#" class="lg">RU</a></li>
+        <li><a href="#" class="lg">EN</a></li>
+      </ul>
+    </div>
+
+    <div class="account guest-user js-dropdown-menu">
+			<a href="#" class="user-icon">
+        <img src="img/icons/svg/ok/user.svg">
+			</a>
+
+      <div class="account-wrap guest-user-menu">
+        <h4 class="small">Увійти за допомогою</h4>
+        <div class="social-login">
+          <a href="#" class="btn-transparent white small">Facebook</a>
+          <a href="#" class="btn-transparent white small">Google</a>
+        </div>
+        <h4 class="small">Або авторизуйтесь на сайті</h4>
+        <a href="#" class="btn-transparent accent">Увійти</a>
+        <a href="#" class="register-link">Зареєструватися</a>
+      </div>
+
+      <div class="account-wrap login-user-menu">
+        <ul>
+          <li><a href="#">Персональні дані</a></li>
+          <li><a href="#">Адреса доставки</a></li>
+          <li><a href="#">Адреса доставки</a></li>
+          <li><a href="#">Історія замовлень</a></li>
+        </ul>
+        <a href="#" class="btn-transparent accent">Вийти</a>
+      </div>
+    </div>
+
+    <a href="#" class="basket">
+      <img src="img/icons/svg/ok/shopping-cart.svg" alt="">
+    </a>
+  </header>
+</div>
+
+	<main class="main">
+
+  <aside class="categories-container">
+  <div class="categories js-categories">
+    <div class="categories-link">
+      <a href="#">
+        <img src="img/icons/big/rolls_white.png">
+        <img src="img/icons/big/rolls_.png" class="img-top">
+        <span class="categories-title">Роли</span>
+      </a>
+    </div>
+    <div class="categories-link">
+      <a href="#">
+        <img src="img/icons/big/sushi_white.png">
+        <img src="img/icons/big/sushi_color.png" class="img-top">
+        <span class="categories-title">Суші</span>
+      </a>
+    </div>
+    <div class="categories-link">
+      <a href="#">
+        <img src="img/icons/big/sashimi_white.png">
+        <img src="img/icons/big/sashimi_color.png" class="img-top">
+        <span class="categories-title">Сашимі</span>
+      </a>
+    </div>
+    <div class="categories-link">
+      <a href="#">
+        <img src="img/icons/big/sets_white.png">
+        <img src="img/icons/big/sets_color.png" class="img-top">
+        <span class="categories-title">Сети</span>
+      </a>
+    </div>
+    <div class="categories-link">
+      <a href="#">
+        <img src="img/icons/big/salads_white.png">
+        <img src="img/icons/big/salads_color.png" class="img-top">
+        <span class="categories-title">Салати</span>
+      </a>
+    </div>
+    <div class="categories-link">
+      <a href="#">
+        <img src="img/icons/big/drinks_white.png">
+        <img src="img/icons/big/drinks_color.png" class="img-top">
+        <span class="categories-title">Напої</span>
+      </a>
+    </div>
+    <div class="categories-link">
+      <a href="#">
+        <img src="img/icons/big/sauces_white.png">
+        <img src="img/icons/big/sauces_color.png" class="img-top">
+        <span class="categories-title">Соуси</span>
+      </a>
+    </div>
+    <div class="categories-link">
+      <a href="#">
+        <img src="img/icons/big/additionall_white.png">
+        <img src="img/icons/big/additionall_color.png" class="img-top">
+        <span class="categories-title">Додатково</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+  <div class="inner-content">
+
+    <div class="breadcrumbs">
+      <a href="/" class="direction-home">Головна</a>
+      <span>/</span>
+      <a class="direction-here">Роли</a>
+    </div>
+
+    <h1>Роли</h1>
+
+    <!--<div class="container-tabs">-->
+
+      <!--<ul class="tabs">-->
+
+        <!--<li class="tab-link current" data-tab="tab-all">Усе</li>-->
+        <!--<li class="tab-link" data-tab="tab-1">Класичні</li>-->
+        <!--<li class="tab-link" data-tab="tab-2">Дракони</li>-->
+        <!--<li class="tab-link" data-tab="tab-3">Макі</li>-->
+        <!--<li class="tab-link" data-tab="tab-4">Теплі</li>-->
+        <!--<li class="tab-link" data-tab="tab-5">Сашимі</li>-->
+        <!--<li class="tab-link" data-tab="tab-6">Солодкі</li>-->
+      <!--</ul>-->
+
+      <!--<div id="tab-1" class="tab-content current">-->
+
+        <!--Класичні-->
+      <!--</div>-->
+      <!--<div id="tab-2" class="tab-content current">-->
+        <!--Дракони-->
+      <!--</div>-->
+      <!--<div id="tab-3" class="tab-content current">-->
+        <!--Макі-->
+      <!--</div>-->
+      <!--<div id="tab-4" class="tab-content current">-->
+        <!--Теплі-->
+      <!--</div>-->
+      <!--<div id="tab-5" class="tab-content current">-->
+        <!--Сашимі-->
+      <!--</div>-->
+      <!--<div id="tab-6" class="tab-content current">-->
+        <!--Солодкі-->
+      <!--</div>-->
+
+    <!--</div>-->
+
+    <div class="button-group filters-button-group">
+      <button class="button is-checked" data-filter="*">show all</button>
+      <button class="button" data-filter=".classic">Класичні</button>
+      <button class="button" data-filter=".dragons">Дракони</button>
+      <button class="button" data-filter=".maki">Макі</button>
+      <button class="button" data-filter=".hot">Теплі</button>
+      <button class="button" data-filter=".sashimi">Сашимі</button>
+      <button class="button" data-filter=".sweets">Солодкі</button>
+    </div>
+
+    <div class="grid-filter">
+
+      <div class="product-item classic" data-category="classic">
+        <div class="cat-image">
+          <a href="#">
+            <img src="img/products/roll_1.png" class="image" title="Филадельфия с угрем" alt="Филадельфия с угрем">
+          </a>
+        </div>
+        <div class="cat-slide-content">
+          <div class="cat-slide-name">
+            <a href="#">Филадельфия с угрем</a>
+          </div>
+          <div class="cat-slide-desc">
+            <span class="accent-text">320 г -</span> Нори, Огурец, Рис, Сыр сливочный, Кунжут, Соус унаги, Угорь
+          </div>
+          <div class="cat-slide-buy">
+            <div class="price">340<span>грн</span></div>
+            <button class="btn-transparent accent">В кошик</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item dragons" data-category="dragons">
+        <div class="cat-image">
+          <a href="#">
+            <img src="img/products/roll_1.png" class="image" title="Филадельфия с угрем" alt="Филадельфия с угрем">
+          </a>
+        </div>
+        <div class="cat-slide-content">
+          <div class="cat-slide-name">
+            <a href="#">Филадельфия с угрем</a>
+          </div>
+          <div class="cat-slide-desc">
+            <span class="accent-text">320 г -</span> Нори, Огурец, Рис, Сыр сливочный, Кунжут, Соус унаги, Угорь
+          </div>
+          <div class="cat-slide-buy">
+            <div class="price">340<span>грн</span></div>
+            <button class="btn-transparent accent">В кошик</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item maki" data-category="maki">
+        <div class="cat-image">
+          <a href="#">
+            <img src="img/products/roll_1.png" class="image" title="Филадельфия с угрем" alt="Филадельфия с угрем">
+          </a>
+        </div>
+        <div class="cat-slide-content">
+          <div class="cat-slide-name">
+            <a href="#">Филадельфия с угрем</a>
+          </div>
+          <div class="cat-slide-desc">
+            <span class="accent-text">320 г -</span> Нори, Огурец, Рис, Сыр сливочный, Кунжут, Соус унаги, Угорь
+          </div>
+          <div class="cat-slide-buy">
+            <div class="price">340<span>грн</span></div>
+            <button class="btn-transparent accent">В кошик</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item hot" data-category="hot">
+        <div class="cat-image">
+          <a href="#">
+            <img src="img/products/roll_1.png" class="image" title="Филадельфия с угрем" alt="Филадельфия с угрем">
+          </a>
+        </div>
+        <div class="cat-slide-content">
+          <div class="cat-slide-name">
+            <a href="#">Филадельфия с угрем</a>
+          </div>
+          <div class="cat-slide-desc">
+            <span class="accent-text">320 г -</span> Нори, Огурец, Рис, Сыр сливочный, Кунжут, Соус унаги, Угорь
+          </div>
+          <div class="cat-slide-buy">
+            <div class="price">340<span>грн</span></div>
+            <button class="btn-transparent accent">В кошик</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item sashimi" data-category="sashimi">
+        <div class="cat-image">
+          <a href="#">
+            <img src="img/products/roll_1.png" class="image" title="Филадельфия с угрем" alt="Филадельфия с угрем">
+          </a>
+        </div>
+        <div class="cat-slide-content">
+          <div class="cat-slide-name">
+            <a href="#">Филадельфия с угрем</a>
+          </div>
+          <div class="cat-slide-desc">
+            <span class="accent-text">320 г -</span> Нори, Огурец, Рис, Сыр сливочный, Кунжут, Соус унаги, Угорь
+          </div>
+          <div class="cat-slide-buy">
+            <div class="price">340<span>грн</span></div>
+            <button class="btn-transparent accent">В кошик</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item sweets" data-category="sweets">
+        <div class="cat-image">
+          <a href="#">
+            <img src="img/products/roll_1.png" class="image" title="Филадельфия с угрем" alt="Филадельфия с угрем">
+          </a>
+        </div>
+        <div class="cat-slide-content">
+          <div class="cat-slide-name">
+            <a href="#">Филадельфия с угрем</a>
+          </div>
+          <div class="cat-slide-desc">
+            <span class="accent-text">320 г -</span> Нори, Огурец, Рис, Сыр сливочный, Кунжут, Соус унаги, Угорь
+          </div>
+          <div class="cat-slide-buy">
+            <div class="price">340<span>грн</span></div>
+            <button class="btn-transparent accent">В кошик</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!--<div class="element-item classic" data-category="classic">-->
+        <!--<h3 class="name">Mercury CCCC</h3>-->
+        <!--<p class="symbol">Hg</p>-->
+        <!--<p class="number">80</p>-->
+        <!--<p class="weight">200.59</p>-->
+      <!--</div>-->
+      <!--<div class="element-item dragons" data-category="dragons">-->
+        <!--<h3 class="name">Tellurium</h3>-->
+        <!--<p class="symbol">Te</p>-->
+        <!--<p class="number">52</p>-->
+        <!--<p class="weight">127.6</p>-->
+      <!--</div>-->
+      <!--<div class="element-item maki" data-category="maki">-->
+        <!--<h3 class="name">Bismuth</h3>-->
+        <!--<p class="symbol">Bi</p>-->
+        <!--<p class="number">83</p>-->
+        <!--<p class="weight">208.980</p>-->
+      <!--</div>-->
+      <!--<div class="element-item hot" data-category="hot">-->
+        <!--<h3 class="name">Lead</h3>-->
+        <!--<p class="symbol">Pb</p>-->
+        <!--<p class="number">82</p>-->
+        <!--<p class="weight">207.2</p>-->
+      <!--</div>-->
+      <!--<div class="element-item sashimi" data-category="sashimi">-->
+        <!--<h3 class="name">Gold</h3>-->
+        <!--<p class="symbol">Au</p>-->
+        <!--<p class="number">79</p>-->
+        <!--<p class="weight">196.967</p>-->
+      <!--</div>-->
+      <!--<div class="element-item sweets" data-category="sweets">-->
+        <!--<h3 class="name">Potassium</h3>-->
+        <!--<p class="symbol">K</p>-->
+        <!--<p class="number">19</p>-->
+        <!--<p class="weight">39.0983</p>-->
+      <!--</div>-->
+      <!--<div class="element-item classic" data-category="classic">-->
+        <!--<h3 class="name">Sodium</h3>-->
+        <!--<p class="symbol">Na</p>-->
+        <!--<p class="number">11</p>-->
+        <!--<p class="weight">22.99</p>-->
+      <!--</div>-->
+      <!--<div class="element-item dragons" data-category="dragons">-->
+        <!--<h3 class="name">Cadmium</h3>-->
+        <!--<p class="symbol">Cd</p>-->
+        <!--<p class="number">48</p>-->
+        <!--<p class="weight">112.411</p>-->
+      <!--</div>-->
+      <!--<div class="element-item maki" data-category="maki">-->
+        <!--<h3 class="name">Calcium</h3>-->
+        <!--<p class="symbol">Ca</p>-->
+        <!--<p class="number">20</p>-->
+        <!--<p class="weight">40.078</p>-->
+      <!--</div>-->
+      <!--<div class="element-item hot" data-category="hot">-->
+        <!--<h3 class="name">Rhenium</h3>-->
+        <!--<p class="symbol">Re</p>-->
+        <!--<p class="number">75</p>-->
+        <!--<p class="weight">186.207</p>-->
+      <!--</div>-->
+      <!--<div class="element-item sashimi" data-category="sashimi">-->
+        <!--<h3 class="name">Thallium</h3>-->
+        <!--<p class="symbol">Tl</p>-->
+        <!--<p class="number">81</p>-->
+        <!--<p class="weight">204.383</p>-->
+      <!--</div>-->
+      <!--<div class="element-item sweets" data-category="sweets">-->
+        <!--<h3 class="name">Antimony</h3>-->
+        <!--<p class="symbol">Sb</p>-->
+        <!--<p class="number">51</p>-->
+        <!--<p class="weight">121.76</p>-->
+      <!--</div>-->
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+  <aside class="cart-container">
+
+  <div class="cart">
+    <div class="content">
+      <div class="order-aside">
+
+        <form action="">
+          <h3>Ваш заказ</h3>
+          <div class="order-list">
+
+            <div class="order-item">
+              <button class="btn-close"></button>
+              <div class="info">
+                <div class="title-item">
+                  Фыладельфыя з лососем
+                </div>
+                <div class="wrapper-quantity">
+                  <div class="custom-input-number">
+                    <span class="minus"><i class="fas fa-chevron-left"></i></span>
+                    <input type="text" value="1"/>
+                    <span class="plus"> <i class="fas fa-chevron-right"></i> </span>
+                  </div>
+                  <div class="price">270 <span>грн</span></div>
+                </div>
+              </div>
+              <div class="image">
+                <img src="img/products/small/product-01.png" alt="Фыладельфыя з лососем">
+              </div>
+            </div>
+
+            <div class="order-item">
+              <button class="btn-close"></button>
+              <div class="info">
+                <div class="title-item">
+                  Фыладельфыя з лососем
+                </div>
+                <div class="wrapper-quantity">
+                  <div class="custom-input-number">
+                    <span class="minus"><i class="fas fa-chevron-left"></i></span>
+                    <input type="text" value="1"/>
+                    <span class="plus"> <i class="fas fa-chevron-right"></i> </span>
+                  </div>
+                  <div class="price">270 <span>грн</span></div>
+                </div>
+              </div>
+              <div class="image">
+                <img src="img/products/small/product-01.png" alt="Фыладельфыя з лососем">
+              </div>
+            </div>
+
+            <div class="order-item">
+              <button class="btn-close"></button>
+              <div class="info">
+                <div class="title-item">
+                  Фыладельфыя з лососем
+                </div>
+                <div class="wrapper-quantity">
+                  <div class="custom-input-number">
+                    <span class="minus"><i class="fas fa-chevron-left"></i></span>
+                    <input type="text" value="1"/>
+                    <span class="plus"> <i class="fas fa-chevron-right"></i> </span>
+                  </div>
+                  <div class="price">270 <span>грн</span></div>
+                </div>
+              </div>
+              <div class="image">
+                <img src="img/products/small/product-01.png" alt="Фыладельфыя з лососем">
+              </div>
+            </div>
+
+          </div>
+
+          <h3>Особисті дані</h3>
+
+          <input type="text" class="custom-input" placeholder="Ім'я">
+
+          <input type="tel" class="custom-input" placeholder="Номер телефону">
+
+          <h3>Адреса доставки:</h3>
+
+          <div class="custom-select">
+            <select>
+              <option disabled name="city">Выберите город</option>
+              <option value="Олександрія">Олександрія</option>
+              <option value="Київ">Київ</option>
+              <option value="Харків">Харків</option>
+              <option value="Донецьк">Донецьк</option>
+              <option value="Львів">Львів</option>
+            </select>
+          </div>
+
+          <div class="row-inputs">
+            <input type="text" class="custom-input" placeholder="Вулиця">
+            <input type="text" class="custom-input" placeholder="Дім">
+          </div>
+
+          <div class="row-inputs">
+            <input type="text" class="custom-input" placeholder="Під'їзд">
+            <input type="text" class="custom-input" placeholder="Квартира">
+          </div>
+
+          <div class="row-inputs">
+            <input type="text" class="custom-input" placeholder="Поверх">
+          </div>
+
+
+          <input type="checkbox" class="custom-checkbox" id="no_call" name="no_call" value="yes">
+          <label for="no_call">Не дзвонити в двері</label>
+
+          <input type="checkbox" class="custom-checkbox" id="leave_at_the_door" name="leave_at_the_door" value="yes">
+          <label for="leave_at_the_door">Залишити під дверима</label>
+
+          <h3>Способы оплаты</h3>
+          <label class="custom-radio">Наличными курьеру
+            <input type="radio" checked="checked" name="payment-method">
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom-radio"> Online оплата
+            <input type="radio" name="payment-method">
+            <span class="checkmark"></span>
+          </label>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="total">
+      <p class="min-sum">Мінімальна сума замовлення 300 грн</p>
+      <div class="total-wrap">
+        <div class="price">
+          <span class="small">Разом:</span>
+          <span class="money">2142</span>
+          <span>грн</span>
+        </div>
+        <a href="#" class="btn-accent">Замовити</a>
+      </div>
+    </div>
+  </div>
+</aside>
+  <footer class="footer">
+  <div class="top-footer">
+    <div class="footer-terms">
+      <a href="#" class="main-logo">
+        <img src="img/logo-transparent.png">
+      </a>
+      <h3>Твій смачний левел</h3>
+    </div>
+
+    <div class="footer-links">
+      <h3>Навігація</h3>
+
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Новини</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+
+    </div>
+    <div class="footer-tel">
+
+      <h3>Оформити замовлення</h3>
+      <ul>
+        <li><a href="tel:+38(095)6435656">+38 (095) 643-56-56</a></li>
+        <li><a href="tel:+38(097)6435656">+38 (097) 643-56-56</a></li>
+        <li><a href="tel:+38(073)6435656">+38 (073) 643-56-56</a></li>
+      </ul>
+
+      <h3>Графік роботи</h3>
+      <p class="roboto"> з 10:00 до 20:00</p>
+
+    </div>
+    <div class="footer-social">
+      <h3>Ми у соц. мережах:</h3>
+      <ul>
+        <li><a href=""><img src="img/icons/svg/social-instagram.svg" alt=""></a></li>
+        <li><a href=""><img src="img/icons/svg/social-fb.svg" alt=""></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="bottom-footer">
+    <p><a href="#">Політика конфіденційності</a></p>
+    <p>Розробка сайту <a href="#" class="accent-text">SEO-Design</a></p>
+  </div>
+</footer>
+
+</main>
+	<script src="libs/jquery/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="libs/isotope.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
