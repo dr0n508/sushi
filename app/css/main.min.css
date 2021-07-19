@@ -535,6 +535,8 @@
               -ms-flex-align: center;
                   align-items: center;
           margin-bottom: 40px; }
+          .cart-container .cart .content .empty .title img {
+            width: 50px; }
           .cart-container .cart .content .empty .title .text {
             margin-left: 20px; }
         .cart-container .cart .content .empty .text-info {

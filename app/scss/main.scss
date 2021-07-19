@@ -35,7 +35,6 @@ body {
     flex-direction: column;
     background-color: $bg;
 }
-
 img, svg {
 	max-height: 100%;
 	max-width: 100%;
@@ -101,7 +100,6 @@ button {
 }
 
 ////main content
-
 .main {
   margin-top: 80px;
   margin-bottom: 40px;
@@ -132,8 +130,6 @@ button {
 .accent-text {
   color: $accent;
 }
-
-
 
 .rolls-row {
   display: flex;
@@ -190,7 +186,6 @@ button {
 
       }
     }
-
   }
 }
 
