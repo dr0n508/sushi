@@ -92,8 +92,25 @@ $(document).ready(function() {
         slidesOffsetAfter: 120,
 
         navigation: {
-            nextEl: '.prod-btn-next',
-            prevEl: '.prod-btn-prev',
+            nextEl: '.rolls-btn-next',
+            prevEl: '.rolls-btn-prev',
+        }
+
+    });
+
+    //sushi-slider
+    const sushi_slider = new Swiper('.sushi-slider-container', {
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        freeMode: 'true',
+
+        slidesOffsetAfter: 120,
+
+        navigation: {
+            nextEl: '.sushi-btn-next',
+            prevEl: '.sushi-btn-prev',
         }
 
     });
@@ -109,8 +126,8 @@ $(document).ready(function() {
         slidesOffsetAfter: 120,
 
         navigation: {
-            nextEl: '.prod-btn-next',
-            prevEl: '.prod-btn-prev',
+            nextEl: '.drinks-btn-next',
+            prevEl: '.drinks-btn-prev',
         }
 
     });
