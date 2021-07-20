@@ -180,29 +180,21 @@ $(document).ready(function() {
 
 
 
-    //tabs
+    //tabs account
 
-    // $('ul.tabs li').click(function(){
-    //     var tab_id = $(this).attr('data-tab');
-    //
-    //     if ( tab_id === 'tab-all') {
-    //         console.log('all');
-    //         $('.tab-content').addClass('current');
-    //     }
-    //
-    //     else  {
-    //
-    //         $('.tab-content').removeClass('current');
-    //         $("#"+tab_id).addClass('current');
-    //
-    //     }
-    //
-    //     $('ul.tabs li').removeClass('current');
-    //
-    //
-    //     $(this).addClass('current');
-    //
-    // })
+
+
+    $(function() {
+        $('ul.tabs li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+    });
 
     // init Isotope
     setTimeout(() => {  {

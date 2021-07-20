@@ -1,3 +1,8 @@
+.col-form {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
 .custom-input-number {
   display: flex;
   align-items: center;
@@ -73,6 +78,10 @@
     color: #999999;
     appearance: none;
   }
+}
+
+.custom-checkbox-wrapper {
+  margin-bottom: 10px;
 }
 
 .custom-checkbox {
