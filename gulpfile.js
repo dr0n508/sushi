@@ -122,8 +122,10 @@ gulp.task('fileinclude', function() {
 gulp.task('watch', ['styles', 'js', 'fileinclude', 'browser-sync'], function() {
 	gulp.watch('app/scss/**/*.scss', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', ['fileinclude']);
-	gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/*.html', ['fileinclude']);
+    gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/_partials/*.html', ['fileinclude']);
+	gulp.watch('app/_partials/*.html', browserSync.reload);
 });
 
 gulp.task('default', ['watch']);
