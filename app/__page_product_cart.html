@@ -3,7 +3,28 @@
 @@include('_partials/_head.html')
 <body>
 	@@include('_partials/_header.html')
-	@@include('_page_product_cart.html')
-	@@include('_partials/_scripts.html')
+
+  <main class="main">
+
+    @@include('_partials/_aside_left.html')
+
+    <div class="inner-content">
+
+      @@include('_partials/_breadcrumbs.html')
+
+      @@include('_partials/_product_cart.html')
+
+      @@include('_partials/_drinks_slider.html')
+
+      @@include('_partials/_recomend_slider.html')
+
+    </div>
+
+    @@include('_partials/_aside_right_full_cart.html')
+    @@include('_partials/_footer.html')
+
+  </main>
+
+  @@include('_partials/_scripts.html')
 </body>
 </html>
