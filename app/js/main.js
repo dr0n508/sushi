@@ -62,9 +62,12 @@ $(document).ready(function() {
         $(this).closest('.order-item').remove();
     });
 
-
+    ////////////////////////////
     //Swiper sliders
-    const swiper = new Swiper('.swiper-container', {
+    ////////////////////////////
+
+    //ad-slider
+    const ad_slider = new Swiper('.ad-slider-container', {
         direction: 'horizontal',
         loop: true,
         pagination: {
@@ -78,7 +81,59 @@ $(document).ready(function() {
         },
     });
 
-    const swiper_consist = new Swiper('.swiper-consist', {
+    //rolls-slider
+    const rolls_slider = new Swiper('.rolls-slider-container', {
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        freeMode: 'true',
+
+        slidesOffsetAfter: 120,
+
+        navigation: {
+            nextEl: '.prod-btn-next',
+            prevEl: '.prod-btn-prev',
+        }
+
+    });
+
+    //drinks-slider
+    const drinks_slider = new Swiper('.drinks-slider-container', {
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        freeMode: 'true',
+
+        slidesOffsetAfter: 120,
+
+        navigation: {
+            nextEl: '.prod-btn-next',
+            prevEl: '.prod-btn-prev',
+        }
+
+    });
+
+    //recomend-slider
+    const recomend_slider = new Swiper('.recomend-slider-container', {
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        freeMode: 'true',
+
+        slidesOffsetAfter: 120,
+
+        navigation: {
+            nextEl: '.recom-btn-next',
+            prevEl: '.recom-btn-prev',
+        }
+
+    });
+
+    //consist_slider
+    const consist_slider = new Swiper('.consist-slider-container', {
         direction: 'horizontal',
         loop: false,
         spaceBetween: 10,
@@ -101,38 +156,11 @@ $(document).ready(function() {
         },
 
     });
+    ///////////end-sliders//////
+    ////////////////////////////
 
-    const swiper_rolls = new Swiper('.swiper-rolls', {
-        direction: 'horizontal',
-        loop: false,
-        spaceBetween: 20,
-        slidesPerView: 'auto',
-        freeMode: 'true',
 
-        slidesOffsetAfter: 120,
 
-        navigation: {
-            nextEl: '.prod-btn-next',
-            prevEl: '.prod-btn-prev',
-        }
-
-    });
-
-    const swiper_recomendations = new Swiper('.swiper-recomendations', {
-        direction: 'horizontal',
-        loop: false,
-        spaceBetween: 20,
-        slidesPerView: 'auto',
-        freeMode: 'true',
-
-        slidesOffsetAfter: 120,
-
-        navigation: {
-            nextEl: '.recom-btn-next',
-            prevEl: '.recom-btn-prev',
-        }
-
-    });
 
 
     //tabs
