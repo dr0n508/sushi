@@ -5,7 +5,7 @@
 @import "categories";
 @import "cart";
 @import "inputs";
-@import "swiper-slider-custom";
+@import "sliders";
 @import "tabs";
 @import "footer";
 
@@ -140,16 +140,32 @@ button {
   color: $accent;
 }
 
-.rolls-row {
+.products-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
   h2 {
     font-size: 24px;
     margin-right: 20px;
+    line-height: 1.2;
   }
   .btn-transparent {
     margin-left: auto;
+  }
+  .next_product, .prev_product {
+    margin-right: 10px;
+  }
+  @media only screen and (max-width: 1240px) {
+    h2 {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -179,6 +195,7 @@ button {
     .cat-slide-name a {
       display: inline-block;
       margin-bottom: 15px;
+      line-height: 1.2;
     }
     .cat-slide-desc {
       color: #999999;

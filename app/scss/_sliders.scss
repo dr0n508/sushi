@@ -12,10 +12,14 @@
 }
 
 .swiper-rolls {
-  overflow: auto;
+  overflow: hidden;
   margin-bottom: 20px;
   margin-right: -30px;
 
+}
+
+.swiper-recomendations {
+  overflow: hidden;
 }
 
 .swiper-consist {
