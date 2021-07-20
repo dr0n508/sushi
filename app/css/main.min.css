@@ -1107,6 +1107,64 @@
         margin-right: 0 !important;
         margin-left: 0 !important; } }
 
+.news-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 -15px; }
+  .news-main .news-article {
+    width: 33.33%; }
+    .news-main .news-article .news-article-content {
+      padding: 15px 15px 50px 15px; }
+    .news-main .news-article .news-image {
+      margin-bottom: 30px;
+      -webkit-border-radius: 40px;
+              border-radius: 40px;
+      overflow: hidden;
+      -webkit-box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+              box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+      height: 250px; }
+      .news-main .news-article .news-image img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        width: 100%;
+        height: 100%; }
+    .news-main .news-article:hover .news-article-content .news-image img {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+    .news-main .news-article .news-content .news-title {
+      font-size: 14px;
+      line-height: 1.3;
+      margin-bottom: 20px; }
+      .news-main .news-article .news-content .news-title a:hover {
+        color: #FE4302; }
+    .news-main .news-article .news-content .date {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      color: #666666;
+      margin-bottom: 30px; }
+    .news-main .news-article .news-content .excerpt {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      color: #999999;
+      margin-bottom: 30px; }
+    .news-main .news-article .news-content .news-more-link {
+      font-size: 14px;
+      color: #FE4302; }
+      .news-main .news-article .news-content .news-more-link:hover {
+        text-decoration: underline; }
+  @media only screen and (max-width: 1400px) {
+    .news-main .news-article {
+      width: 50%; } }
+  @media only screen and (max-width: 450px) {
+    .news-main .news-article {
+      width: 100%; } }
+
 .footer {
   background: #131313;
   -webkit-box-shadow: 0 -22px 22px rgba(0, 0, 0, 0.6);
@@ -1286,7 +1344,7 @@ button {
   button:hover {
     color: #ffffff; }
 
-.animate, a, button {
+.animate, .news-main .news-article .news-image img, a, button {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
