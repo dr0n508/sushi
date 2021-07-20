@@ -82,12 +82,22 @@ $(document).ready(function() {
         direction: 'horizontal',
         loop: false,
         spaceBetween: 10,
-        slidesPerView: 5,
         freeMode: 'true',
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+            },
+            480: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 5,
+            }
+        },
 
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.consist-btn-next',
+            prevEl: '.consist-btn-prev',
         },
 
     });

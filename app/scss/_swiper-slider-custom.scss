@@ -25,32 +25,55 @@
 
 .rolls-buttons {
   display: flex;
-  .prev_product,
-  .next_product {
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-    background: none;
-    outline: none;
-    border: none;
-    border: solid 1px #999999;
-    border-radius: 50%;
-    i {
-      font-size: 12px;
-      color: #999999;
-    }
-    &:hover {
-      border-color: $accent;
-      i {
-        color: $accent;
-      }
-    }
+
+}
+
+.prev_product,
+.next_product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  background: none;
+  outline: none;
+  border: solid 1px #999999;
+  border-radius: 50%;
+  cursor: pointer;
+  i {
+    font-size: 14px;
+    color: #999999;
   }
-  .prev_product.swiper-button-disabled, .next_product.swiper-button-disabled {
-    border-color: #454545;
+  &:hover {
+    border-color: $accent;
     i {
-      color: #454545;
+      color: $accent;
     }
   }
 }
+.prev_product.swiper-button-disabled, .next_product.swiper-button-disabled {
+  border-color: #454545;
+  i {
+    color: #454545;
+  }
+}
 
+
+//Consist Slider
+.wrapper-consist-slider {
+  //padding: 0 30px;
+  position: relative;
+  .next_product, .prev_product {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    margin-top: -12px;
+  }
+  .next_product {
+    right: -30px;
+  }
+  .prev_product {
+    left: -30px;
+  }
+}
