@@ -1096,6 +1096,16 @@
           .account-wrapper ul.tabs .tab-link:last-child {
             margin-left: 5px;
             margin-right: 0; } }
+  @media only screen and (max-width: 500px) {
+    .account-wrapper ul.tabs {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .account-wrapper ul.tabs .tab-link {
+        margin-right: 0 !important;
+        margin-left: 0 !important; } }
 
 .footer {
   background: #131313;
