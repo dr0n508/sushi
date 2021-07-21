@@ -1,5 +1,11 @@
-.contacts {
+.cart-block.decorated {
+  background-color: black;
+  border: solid 1px #383838;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+}
 
+.contacts {
   .contacts-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -32,10 +38,7 @@
   }
   .cart-block.decorated {
     padding: 30px;
-    background-color: black;
-    border: solid 1px #383838;
-    border-radius: 20px;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+
   }
   .cart-block.maps-wrap {
     width: calc(60% - 15px);

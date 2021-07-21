@@ -10,6 +10,7 @@
 @import "tabs";
 @import "news";
 @import "contacts";
+@import "about_us";
 @import "footer";
 
 ::-moz-selection {
@@ -175,8 +176,6 @@ button {
     }
   }
 }
-
-
 
 .product-list {
   display: flex;

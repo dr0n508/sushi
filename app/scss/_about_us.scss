@@ -1,0 +1,112 @@
+.about-us {
+  .about-pride-sushi {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .cart-block {
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
+      &:first-child {
+        margin-right: 20px;
+      }
+      &:last-child {
+        margin-left: 20px;
+      }
+      .image {
+        margin-bottom: 20px;
+        img {
+          float: left;
+        }
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #e4e4e4;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .cart-block.text-block {
+      padding: 10px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cart-block.decorated {
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .advanced {
+    display: flex;
+    flex-wrap: wrap;
+    .cart-block {
+      width: calc(25% - 60px/4);
+      margin-right: 20px;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .image {
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 125px;
+        }
+      }
+      .title {
+        font-size: 14px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 12px;
+        color: #e4e4e4;
+      }
+    }
+    .cart-block.decorated {
+      padding: 30px 10px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .about-pride-sushi {
+      .cart-block.decorated {
+        display: none;
+      }
+      .cart-block.text-block {
+        width: 80%;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    .advanced {
+      .cart-block {
+        width: calc(50% - 30px/2);
+        margin-right: 15px;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .about-pride-sushi {
+      .cart-block.text-block {
+        width: 100%;
+      }
+    }
+    .advanced {
+      .cart-block {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
