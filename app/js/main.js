@@ -246,5 +246,10 @@ $(document).ready(function() {
 
     // var marker = L.marker([48.664, 33.120]).addTo(mymap);
 
+
+    //Animate
+
+    AOS.init();
+
 });
 
