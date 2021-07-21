@@ -228,5 +228,23 @@ $(document).ready(function() {
 
     } }, 100);
 
+
+
+    //Maps OpenLayers
+
+    // var mymap = L.map('mapid').setView([48.664, 33.120], 13);
+
+
+    // L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    //     maxZoom: 18,
+    //     id: 'mapbox/streets-v11',
+    //     tileSize: 512,
+    //     zoomOffset: -1,
+    //     accessToken: 'pk.eyJ1IjoiZHIwbiIsImEiOiJja3JkaG95eGM1Y2JiMndvNjNodjFhbGF4In0.MqNK135lDIEytB6raP4Jdw'
+    // }).addTo(mymap);
+
+    // var marker = L.marker([48.664, 33.120]).addTo(mymap);
+
 });
 
