@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url(../fonts/segoePrint/stylesheet.css);
 .burger {
@@ -1395,7 +1396,8 @@
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  margin-bottom: 40px; }
   .about-us .advanced .cart-block {
     width: calc(25% - 60px/4);
     margin-right: 20px;
@@ -1416,7 +1418,83 @@
   .about-us .advanced .cart-block.decorated {
     padding: 30px 10px; }
 
+.about-us .sushi-block h3 {
+  margin-bottom: 30px; }
+
+.about-us .sushi-block .big-sushi {
+  width: 400px;
+  position: relative;
+  margin: 50px auto; }
+  .about-us .sushi-block .big-sushi .line-right {
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: white;
+    -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    right: -50px;
+    top: 100px; }
+    .about-us .sushi-block .big-sushi .line-right:before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      display: block;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: white;
+      right: 0;
+      top: -10px; }
+    .about-us .sushi-block .big-sushi .line-right:after {
+      position: absolute;
+      content: "Мало рису";
+      right: -100px;
+      -webkit-transform: rotate(20deg);
+          -ms-transform: rotate(20deg);
+              transform: rotate(20deg); }
+  .about-us .sushi-block .big-sushi .line-left {
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: white;
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+    left: -50px;
+    top: 60px; }
+    .about-us .sushi-block .big-sushi .line-left:before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      display: block;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: white;
+      left: 0;
+      top: -10px; }
+    .about-us .sushi-block .big-sushi .line-left:after {
+      position: absolute;
+      content: "Багато риби";
+      left: -115px;
+      -webkit-transform: rotate(-20deg);
+          -ms-transform: rotate(-20deg);
+              transform: rotate(-20deg); }
+
+.about-us .sushi-block img {
+  display: block;
+  width: 100%; }
+
 @media only screen and (max-width: 768px) {
+  .about-us .sushi-block .big-sushi {
+    width: 100%; }
+    .about-us .sushi-block .big-sushi .line-right {
+      position: relative;
+      width: 1px; }
+    .about-us .sushi-block .big-sushi .line-left {
+      position: relative;
+      width: 1px; }
   .about-us .about-pride-sushi .cart-block.decorated {
     display: none; }
   .about-us .about-pride-sushi .cart-block.text-block {
