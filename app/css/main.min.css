@@ -894,6 +894,9 @@
   margin-bottom: 20px;
   margin-right: -30px; }
 
+.drinks-slider-container {
+  overflow: hidden; }
+
 .ad-slider-container {
   position: relative;
   overflow: hidden;
@@ -1835,7 +1838,7 @@ button {
   button:hover {
     color: #ffffff; }
 
-.animate, .news-image img, a, button {
+.animate, .news-image img, a, button, .product-item .cat-image {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
@@ -1944,7 +1947,10 @@ button {
   margin-bottom: 20px; }
   .product-item .cat-image {
     text-align: center;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9); }
   .product-item .cat-slide-content {
     -webkit-box-flex: 5;
     -webkit-flex-grow: 5;
@@ -1994,6 +2000,10 @@ button {
         font-family: "Segoe Print", sans-serif;
         font-size: 14px;
         margin-left: 5px; }
+  .product-item:hover .cat-image {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1); }
 
 .product-grid.product-list {
   -webkit-flex-wrap: wrap;

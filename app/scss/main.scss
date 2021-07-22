@@ -200,8 +200,10 @@ button {
   @extend .border-cards;
   margin-bottom: 20px;
   .cat-image {
+    @extend .animate;
     text-align: center;
     margin-bottom: 10px;
+    transform: scale(.9);
   }
   .cat-slide-content {
     flex-grow: 5;
@@ -232,6 +234,11 @@ button {
         font-size: 14px;
         margin-left: 5px;
       }
+    }
+  }
+  &:hover {
+    .cat-image {
+      transform: scale(1);
     }
   }
 }
