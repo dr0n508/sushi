@@ -3,7 +3,7 @@
   display: none;
   position: fixed;
   right: 10px;
-  top: 27px;
+  top: 29px;
   z-index: 1;
   margin-left: auto;
   height: 25px;
@@ -246,6 +246,8 @@
     }
     .basket {
       line-height: 24px;
+      width: 36px;
+      height: 36px;
       display: none;
       margin-left: 10px;
       img {
@@ -253,8 +255,19 @@
         height: auto;
       }
       @media only screen and (max-width: 1024px) {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
+    }
+    .basket.active {
+      //display: flex;
+      //align-items: center;
+      //justify-content: center;
+      background-color: $accent;
+      border-radius: 50%;
+
+
     }
 
     @media only screen and (min-width: 1025px) {

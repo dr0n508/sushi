@@ -8,12 +8,18 @@ $(document).ready(function() {
 	});
 	$(document).on('click', function(e) {
 
-		if (!$(e.target).closest('.burger').length && !$(e.target).closest('.js-dropdown-menu').length) {
+		if (!$(e.target).closest('.burger').length &&
+            !$(e.target).closest('.js-dropdown-menu').length &&
+            !$(e.target).closest('#cart-button').length
+        ) {
 
 			$('.burger').removeClass('active');
             $('.nav-mobile').removeClass('active');
             $('.js-dropdown-menu').removeClass('active');
             $('body').removeClass('no_scroll');
+
+            $('.cart-container').removeClass('show');
+            $('#cart-button').removeClass('active');
 
 		}
 		e.stopPropagation();
@@ -24,6 +30,15 @@ $(document).ready(function() {
         if ($(window).width() >= 1024) {
             $('body').toggleClass('no_scroll');
         }
+    });
+
+
+    $('#cart-button').click(function(e){
+
+
+        $('.cart-container').toggleClass('show');
+        $('#cart-button').toggleClass('active');
+
     });
 
     $('.js-dropdown-menu').click(function(e){

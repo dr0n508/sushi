@@ -74,6 +74,11 @@
     visibility: hidden;
   }
 }
+.cart-container.show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 13;
+}
 
 .order-aside {
   h3 {
