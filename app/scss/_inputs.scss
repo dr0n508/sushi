@@ -36,7 +36,7 @@
   }
 }
 
-.custom-input {
+.custom-input, .textarea {
   margin-bottom: 20px;
   padding: 10px 20px;
   width: 100%;
@@ -49,6 +49,10 @@
   border: solid 1px #333333;
   border-radius: 50px;
   outline: none;
+}
+
+.textarea {
+  border-radius: 20px;
 }
 
 .custom-select {
@@ -93,6 +97,7 @@
 .custom-checkbox+label {
   display: inline-flex;
   align-items: center;
+  margin-bottom: 10px;
   user-select: none;
   font-family: $roboto;
   cursor: pointer;

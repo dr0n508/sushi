@@ -712,7 +712,7 @@
     height: 34px;
     width: 30px; }
 
-.custom-input {
+.custom-input, .textarea {
   margin-bottom: 20px;
   padding: 10px 20px;
   width: 100%;
@@ -726,6 +726,10 @@
   -webkit-border-radius: 50px;
           border-radius: 50px;
   outline: none; }
+
+.textarea {
+  -webkit-border-radius: 20px;
+          border-radius: 20px; }
 
 .custom-select {
   position: relative;
@@ -773,6 +777,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

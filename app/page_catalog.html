@@ -483,7 +483,7 @@
 
           <div class="custom-select">
             <select>
-              <option disabled name="city">Выберите город</option>
+              <option disabled selected name="city">Выберите город</option>
               <option value="Олександрія">Олександрія</option>
               <option value="Київ">Київ</option>
               <option value="Харків">Харків</option>
@@ -506,12 +506,33 @@
             <input type="text" class="custom-input" placeholder="Поверх">
           </div>
 
-
           <input type="checkbox" class="custom-checkbox" id="no_call" name="no_call" value="yes">
           <label for="no_call">Не дзвонити в двері</label>
 
           <input type="checkbox" class="custom-checkbox" id="leave_at_the_door" name="leave_at_the_door" value="yes">
           <label for="leave_at_the_door">Залишити під дверима</label>
+
+          <div class="custom-select">
+            <select>
+              <option disabled selected name="date">Дата</option>
+              <option value="today">Сегодня</option>
+              <option value="tomorrow">Завтра</option>
+              <option value="25072021">25.07.2021</option>
+              <option value="26072021">26.07.2021</option>
+              <option value="27072021">27.07.2021</option>
+            </select>
+          </div>
+
+          <div class="custom-select">
+            <select>
+              <option disabled selected name="time">Время</option>
+              <option value="1630">16:30</option>
+              <option value="1645">16:45</option>
+              <option value="1700">17:00</option>
+              <option value="1715">17:15</option>
+              <option value="1730">17:30</option>
+            </select>
+          </div>
 
           <h3>Способы оплаты</h3>
           <label class="custom-radio">Наличными курьеру
@@ -523,6 +544,41 @@
             <span class="checkmark"></span>
           </label>
 
+          <input type="text" class="custom-input" placeholder="Подготовить сдачу с ">
+
+          <div class="custom-select">
+            <select>
+              <option disabled selected name="amount_person">Кол-во персон</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+
+          <div class="custom-select">
+            <select>
+              <option disabled selected name="amount_study_stick">Кол-во учебных палочек</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+
+          <textarea class="textarea" name="comment" id="" cols="30" rows="10" placeholder="Примечание к заказу"></textarea>
+
+          <input type="checkbox" class="custom-checkbox" id="have_cat" name="have_cat" value="yes">
+          <label for="have_cat">Я маю кота</label>
+
+          <input type="checkbox" class="custom-checkbox" id="have_dog" name="have_dog" value="yes">
+          <label for="have_dog">Я маю собаку</label>
         </form>
       </div>
     </div>
