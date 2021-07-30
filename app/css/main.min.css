@@ -104,7 +104,7 @@
           .main-header header .header-item .item-wrapper li a:hover {
             color: #FE4302; }
     .main-header header .cities {
-      margin-left: 20px;
+      margin-left: auto;
       color: #999999; }
       .main-header header .cities .current-city .map-marker {
         display: none;
@@ -128,7 +128,7 @@
     .main-header header .nav-mobile {
       display: none; }
     .main-header header .tel {
-      margin-left: auto;
+      margin-left: 20px;
       font-family: "Roboto", sans-serif; }
       .main-header header .tel img {
         width: 25px; }
@@ -164,7 +164,8 @@
         .main-header header .lang {
           display: none; } }
     .main-header header .account {
-      margin-left: 10px; }
+      margin-left: 10px;
+      margin-right: 10px; }
       .main-header header .account .user-icon {
         display: -webkit-box;
         display: -webkit-flex;
