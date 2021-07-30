@@ -78,16 +78,14 @@
 
           <h3>Адреса доставки:</h3>
 
-          <div class="custom-select">
-            <select>
-              <option disabled selected name="city">Выберите город</option>
-              <option value="Олександрія">Олександрія</option>
-              <option value="Київ">Київ</option>
-              <option value="Харків">Харків</option>
-              <option value="Донецьк">Донецьк</option>
-              <option value="Львів">Львів</option>
-            </select>
-          </div>
+          <select class="new-custom-select">
+            <option value="" selected disabled>Выберите город</option>
+            <option value="Олександрія">Олександрія</option>
+            <option value="Київ">Київ</option>
+            <option value="Харків">Харків</option>
+            <option value="Донецьк">Донецьк</option>
+            <option value="Львів">Львів</option>
+          </select>
 
           <div class="row-inputs">
             <input type="text" class="custom-input" placeholder="Вулиця">
@@ -109,27 +107,23 @@
           <input type="checkbox" class="custom-checkbox" id="leave_at_the_door" name="leave_at_the_door" value="yes">
           <label for="leave_at_the_door">Залишити під дверима</label>
 
-          <div class="custom-select">
-            <select>
-              <option disabled selected name="date">Дата</option>
-              <option value="today">Сегодня</option>
-              <option value="tomorrow">Завтра</option>
-              <option value="25072021">25.07.2021</option>
-              <option value="26072021">26.07.2021</option>
-              <option value="27072021">27.07.2021</option>
-            </select>
-          </div>
+          <select class="new-custom-select">
+            <option value="" selected disabled>Дата</option>
+            <option value="today">Сегодня</option>
+            <option value="tomorrow">Завтра</option>
+            <option value="25072021">25.07.2021</option>
+            <option value="26072021">26.07.2021</option>
+            <option value="27072021">27.07.2021</option>
+          </select>
 
-          <div class="custom-select">
-            <select>
-              <option disabled selected name="time">Время</option>
-              <option value="1630">16:30</option>
-              <option value="1645">16:45</option>
-              <option value="1700">17:00</option>
-              <option value="1715">17:15</option>
-              <option value="1730">17:30</option>
-            </select>
-          </div>
+          <select class="new-custom-select">
+            <option disabled selected name="time">Время</option>
+            <option value="1630">16:30</option>
+            <option value="1645">16:45</option>
+            <option value="1700">17:00</option>
+            <option value="1715">17:15</option>
+            <option value="1730">17:30</option>
+          </select>
 
           <h3>Способы оплаты</h3>
           <label class="custom-radio">Наличными курьеру
@@ -143,31 +137,27 @@
 
           <input type="text" class="custom-input" placeholder="Подготовить сдачу с ">
 
-          <div class="custom-select">
-            <select>
-              <option disabled selected name="amount_person">Кол-во персон</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-            </select>
-          </div>
+          <select class="new-custom-select">
+            <option disabled selected name="time">Кол-во персон</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
 
-          <div class="custom-select">
-            <select>
-              <option disabled selected name="amount_study_stick">Кол-во учебных палочек</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-            </select>
-          </div>
+          <select class="new-custom-select" name="amount_study_stick">
+            <option disabled selected name="time">Кол-во учебных палочек</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
 
           <textarea class="textarea" name="comment" id="" cols="30" rows="10" placeholder="Примечание к заказу"></textarea>
 
